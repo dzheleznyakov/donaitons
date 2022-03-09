@@ -14,9 +14,9 @@ const ProgressBar = () => {
             <span style={{fontSize: '16px'}}>
                 {' '}(to be confirmed: checking the situation regarding food supplies)
             </span></p>
-            {/*<div className={classes.Bar}>
+            <div className={classes.Bar}>
                 <div className={classes.Progress} style={{width: `${ratio * 100}%`}} />
-    </div>*/}
+            </div>
         </div>
     );
 };
