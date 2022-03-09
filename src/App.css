@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+
+.TextWrapper {
+  margin: 0 auto;
+  width: 60%;
+  text-align: start;
+}
+

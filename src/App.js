@@ -1,23 +1,40 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
+import ImageCarousel from './components/ImageCarousel';
+import ProgressBar from './components/ProgressBar';
+import flag from './photos/flag.jpeg';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
+      <h1 style={{width: '60%', marginLeft: 'auto', marginRight: 'auto', textAlign: 'start'}}>
+        Help for orphan children evacuated from Kharkov{' '}
+        <img src={flag} width={20} height={20} />
+      </h1>
+      <div className="TextWrapper">
+        <ul>
+          <li>An orphan house in Kharkov got damaged when a military operation started in the city. </li>
+          <li>Volunteers managed to evacuate majority of children, but sadly a few children died. </li>
+          <li>They have 29 children ranging from newborns to 7 year olds. </li>
+          <li>They are safe now and looked after. </li>
+          <li>Only 5 volunteers are working on the site and taking shifts to maintain the place. </li>
+          <li>They do not receive any support or income.</li>
+          <li>They are getting some humanitarian help, and local people have no money to help them financially.</li>
+        </ul>
+
+        <p style={{fontSize: '24px', fontWeight: 'bold', color: 'darkgreen'}}>
+          We are raising money to help maintain this place for the following six months.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+        <p style={{fontSize: '24px', color: 'rgb(26, 115, 232)'}}><b>
+          If you would like to help, the PayPal account is: <em>zheleznyakov.dmitry@gmail.com</em>
+        </b></p>
+      </div>
+
+      <ProgressBar />
+      <ImageCarousel />
+
+
     </div>
   );
 }
