@@ -10,7 +10,7 @@ const ProgressBar = () => {
     return (
         <div>
             <p style={{fontSize: '24px', }}><strong>
-                {`raised: £${current} / target: £${goal}`}
+                {`raised: £${current.toFixed(2)} / target: £${goal.toFixed(2)}`}
             </strong>
             <span style={{fontSize: '16px'}}>
                 {' '}(to be confirmed: checking the situation regarding food supplies)
