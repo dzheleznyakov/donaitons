@@ -11,14 +11,15 @@ const ProgressBar = () => {
     return (
         <div>
             <p style={{fontSize: '24px', }}><strong>
-                {`raised: £${current.toFixed(2)} / target: £${goal.toFixed(2)}`}
+                {`raised: £${current.toFixed(2)}`}{/*` / target: £${goal.toFixed(2)}`*/}
             </strong>
-            <span style={{fontSize: '16px'}}>
-                {' '}(to be confirmed: checking the situation regarding food supplies)
-            </span></p>
-            <div className={classes.Bar}>
+                {/*<span style={{fontSize: '16px'}}>
+                    {' '}(to be confirmed: checking the situation regarding food supplies)
+    </span>*/}
+            </p>
+            {/*<div className={classes.Bar}>
                 <div className={classes.Progress} style={{width: `${ratio * 100}%`}} />
-            </div>
+</div>*/}
         </div>
     );
 };
