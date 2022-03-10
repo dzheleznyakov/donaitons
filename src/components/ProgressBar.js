@@ -2,7 +2,8 @@ import classes from './ProgressBar.module.css'
 
 const ProgressBar = () => {
     const goal = 2000;
-    const current = 39.72 + 160 + 219.13 + 91.31 + 14.6 + 16 + 200 + 100 + 100 + 73.05;
+    const current = 39.72 + 160 + 219.13 + 91.31 
+        + 14.6 + 16 + 200 + 100 + 100 + 73.05 + 21.91;
 
     const ratio = current / goal;
 
