@@ -7,16 +7,25 @@ import flag from './photos/flag.jpeg';
 function App() {
   return (
     <div className="App">
-      <h1 style={{width: '60%', marginLeft: 'auto', marginRight: 'auto', textAlign: 'start'}}>
-        Help for orphan children evacuated from Kharkov{' '}
+      <h1 style={{
+        width: '60%', 
+        marginLeft: 'auto', 
+        marginRight: 'auto', 
+        textAlign: 'start', 
+        width: 'fit-content',
+      }}>
+        <span style={{
+          marginLeft: "-100px",
+        }}>Help for orphan children evacuated from Kharkov{' '}</span>
         <img src={flag} width={20} height={20} />
       </h1>
       <div className="TextWrapper">
         <ul>
-          <li>An orphan house in Kharkov got damaged when a military operation started in the city. </li>
-          <li>Volunteers managed to evacuate majority of children, but sadly a few children died. </li>
+          <li>An orphan house in Kharkov got severely damaged when a military operation began in the city. </li>
+          <li>Sadly a few children died</li>
+          <li>Volunteers managed to evacuate majority of children. </li>
           <li>They have 29 children ranging from newborns to 7 year olds. </li>
-          <li>They are safe now and looked after. </li>
+          <li>They are safe now and are looked after. </li>
           <li>Only 5 volunteers are working on the site and taking shifts to maintain the place. </li>
           <li>They do not receive any support or income.</li>
           <li>They are getting some humanitarian help, and local people have no money to help them financially.</li>
