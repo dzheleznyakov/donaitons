@@ -17,16 +17,20 @@ import water from './photos/275579781_3012185575778037_5614364930518451835_n.jpe
 import children from './photos/2022-03-13-21-16-54.jpg';
 import emma from './photos/2022-03-13-20-37-46.jpg';
 import handToHand from './photos/IMG_20220313_192907_850.jpg';
+import irpin from './photos/2022-03-16-17-09-16.jpg';
+import irpin2 from './photos/2022-03-16-17-06-20.jpg';
 import drawing1 from './photos/IMG_20220313_213752_359.jpg';
 import drawing2 from './photos/IMG_20220313_213757_134.jpg';
 import drawing3 from './photos/IMG_20220313_213801_768.jpg';
 
 function App() {
-  const current = 3537.07;
+  const current = 5794.85 + 439.79;
   const smallCarouselSize = 250
   return (
     <div className="App">
       <ImageCarousel>
+        <Image src={irpin} size={smallCarouselSize} />
+        <Image src={irpin2} size={smallCarouselSize} />
         <Image src={children} size={smallCarouselSize} />
         <Image src={drawing1} size={smallCarouselSize} />
         <Image src={emma} size={smallCarouselSize} />
@@ -48,21 +52,23 @@ function App() {
           marginLeft: "-100px",
         }}>
           <img src={flag} width={20} height={20} />
-          {' '}Help for orphan children evacuated from Kharkov{' '}</span>
+          {' '}Help for orphan children evacuated from the occupied cities{' '}</span>
         <img src={flag} width={20} height={20} />
       </h1>
       <div className="TextWrapper">
         <ul>
-          <li>An orphan house in Kharkov got severely damaged when a military operation began in the city. </li>
-          <li>Volunteers managed to evacuate the majority of children.</li>
-          <li>There are more than 130 children ranging from newborns to 10 year-olds, and 50 of them are babies. These children have recently become orphans and are emotionally traumatised.</li>
+          {/* <li>An orphan house in Kharkov got severely damaged when a military operation began in the city. </li> */}
+          {/* <li>Volunteers managed to evacuate the majority of children.</li> */}
+          <li>Over 140 children were evacutated from the occupied cities (Kharkov, Kherson, Irpin and the Donetsk regeion.</li>
+          <li>50 of children are babies.</li>
+          <li>These children have recently become orphans and are emotionally traumatised.</li>
           <li>Volunteers are dedicated to provide care and support for them.</li>
           <li>They do not receive any support or income and the local people have no money to help them either. </li>
         </ul>
 
         <p style={{fontSize: '30px', fontWeight: 'bold', color: 'darkgreen'}}>
         We are raising money to respond to their urgent needs and help maintain their stock of food, water and essentials
-        (nappies, formula, etc.).
+        (nappies, formula milk, etc.).
         </p>
 
         <p style={{fontSize: '24px', color: 'rgb(26, 115, 232)'}}><b>
@@ -76,7 +82,9 @@ function App() {
       <div className="TextWrapper">
         <p>So far we've raised <b>£{current}</b> and with this money, we helped with:</p>
         <ul className="Results">
-          <li>bought vital medicine for both the "Cafe" and the "School no. 3": on the way from Germany, but delayed at the customs waiting for the custom fee to be paid (we are currently raising money for that)</li>
+          <li>bought vital medicine for both the "Cafe" and the "School no. 3": on the way from Germany, but delayed at the customs waiting for the custom.</li>
+          <li>paid for the customs fee in order to get the medication delivered</li>
+          <li>ordered another batch of medicaiton needed for the other two schools + custom feed </li>
           <li>got two second-hand baby cots: delivered, see the photo (now little children can sleep safely and comfortably, as they slept on the foldable camping beds)</li>
           <li>covered food expenses for the 5 volunteers for a month, so that they can continue taking care of the children without worrying about what they will eat</li>
           <li>bought some fresh groceries (milk, bread, fruit)</li>
