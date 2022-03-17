@@ -6,6 +6,7 @@ import flag from './photos/flag.jpeg';
 import Image from './components/Image';
 import Video from './components/Video';
 import Result from './components/Result';
+import ProgressBar from './components/ProgressBar';
 
 import imgBabyFood from './photos/IMG_20220308_212007_505.jpg';
 import imgFood from './photos/IMG_20220308_212013_126.jpg';
@@ -24,7 +25,10 @@ import drawing2 from './photos/IMG_20220313_213757_134.jpg';
 import drawing3 from './photos/IMG_20220313_213801_768.jpg';
 
 function App() {
-  const current = 5794.85 + 439.79;
+  // const current = 5794.85 + 439.79;
+  const current  = 218.39;
+  const goal = 1000;
+
   const smallCarouselSize = 250
   return (
     <div className="App">
@@ -40,7 +44,9 @@ function App() {
       </ImageCarousel>
 
       <h1 style={{
-        width: '60%', 
+        maxWidth: '90vw',
+        width: '60%',
+        textAlign: 'center',
         marginLeft: 'auto', 
         marginRight: 'auto', 
         textAlign: 'start', 
@@ -77,10 +83,11 @@ function App() {
         </b></p>
       </div>
 
-      {/* <ProgressBar current={current} /> */}
 
       <div className="TextWrapper">
-        <p>So far we've raised <b>£{current}</b> and with this money, we helped with:</p>
+        <p>So far we've raised <b>£{current.toFixed(2)}</b> out of <b>£{goal.toFixed(2)}</b> </p>
+        <ProgressBar current={current} goal={goal} />
+        <p>With this money, we helped with:</p>
         <ul className="Results">
           <li>bought vital medicine for both the "Cafe" and the "School no. 3": on the way from Germany, but delayed at the customs waiting for the custom.</li>
           <li>paid for the customs fee in order to get the medication delivered</li>
@@ -88,7 +95,7 @@ function App() {
           <li>got two second-hand baby cots: delivered, see the photo (now little children can sleep safely and comfortably, as they slept on the foldable camping beds)</li>
           <li>covered food expenses for the 5 volunteers for a month, so that they can continue taking care of the children without worrying about what they will eat</li>
           <li>bought some fresh groceries (milk, bread, fruit)</li>
-          <li>got 5 warm jackets and 5 pairs of boots. 2 girls had their jackets torn. Now they are dressed warmly. The weather in Dnipro is -7C</li>
+          <li>got 5 warm jackets and 5 pairs of boots. 2 girls had their jackets torn. Now they are dressed warmly. The weather is -7C</li>
           <li>bought pacifiers, muslin cloths, baby dry formula packs for the "School no. 3"</li>
           <li>bought 2 second-hand prams: one for the "Cafe" and another on for the "School no. 3": delivered, see the photo</li>
           <li>little boy Misha caught bronchitis and is now in the hospital. We ordered antibiotics for him</li>
