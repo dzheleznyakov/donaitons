@@ -27,7 +27,7 @@ import drawing3 from './photos/IMG_20220313_213801_768.jpg';
 function App() {
   // const current = 5794.85 + 439.79;
   const current  = 218.39;
-  const goal = 1000;
+  const goal = 3000;
 
   const smallCarouselSize = 250
   return (
