@@ -41,7 +41,7 @@ function App() {
   const kindnessRef = useRef();
 
   // const current = 5794.85 + 439.79;
-  const current  = 218.39 + 208.10;
+  const current  = 218.39 + 208.10 + 363.36;
   const goal = 3000;
 
   const smallCarouselSize = 250;
@@ -221,8 +221,8 @@ function App() {
 
           <p ref={doneRef}>
             <MultiLanguageComponent
-              en="With all the money we have raised so far, we helped with:"
-              ru="С помощью денег, которые мы собрали на сегодняшний день, мы помогли:"
+              en="With the money we have previously raised we helped with:"
+              ru="С помощью денег, которые мы собрали раньше, мы помогли:"
             />
           </p>
           <ul className="Results">
