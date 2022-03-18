@@ -1,0 +1,6 @@
+.LanguageChooser {
+    display: flex;
+    flex-direction: row;
+    padding: 4px;
+    border: 1px solid black;
+}

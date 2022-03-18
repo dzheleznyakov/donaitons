@@ -51,11 +51,11 @@
 }
 
 .Results li {
-  margin-bottom: 4px;
+  margin-bottom: 8px;
 }
 
 .Results li:before {
-  content: '✓';
+  content: '❤️';
   margin-left: -20px;
   margin-right: 10px;
   background-color: white;
@@ -94,9 +94,31 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  border-bottom: 1px solid black;
 }
 
-.ToolBar option {
-  font-size: 24px;
+.ToolBar > a {
+  margin: 0 8px;
+  padding: 0 8px;
+  font-size: 1.2rem;
+  border-bottom: 1px solid transparent;
+  cursor: pointer;
 }
 
+.ToolBar > a:hover {
+  border-bottom-color: black;
+}
+
+.KindnessCard {
+  margin-bottom: 24px;
+  font-size: 1.5rem;
+}
+.KindnessCard:last-of-type {
+  margin-bottom: 36px;
+}
+
+.Body {
+  margin-top: 60px;
+  overflow-y: scroll;
+  height: calc(100vh - 60px);
+}
