@@ -52,9 +52,15 @@ function App() {
     <div className="App">
       <div className="ToolBar">
         <LanguageChooser lang={lang} setLang={setLang} />
-        <a onClick={scrollTo(ourGoalRef)}>Our Goal</a>
-        <a onClick={scrollTo(doneRef)}>What've been done</a>
-        <a onClick={scrollTo(kindnessRef)}>Your kindness</a>
+        <a onClick={scrollTo(ourGoalRef)}>
+          <MultiLanguageComponent en="Our goal" ru="Наша цель" />
+        </a>
+        <a onClick={scrollTo(doneRef)}>
+          <MultiLanguageComponent en="How we have helped" ru="Чем мы помогли" />
+        </a>
+        <a onClick={scrollTo(kindnessRef)}>
+          <MultiLanguageComponent en="Your kindness" ru="Ваша доброта" />
+        </a>
         <a onClick={scrollTo(topRef)}>⏫</a>
       </div>
       <div className="Body">
