@@ -1,6 +1,5 @@
 import './App.css';
 import ImageCarousel from './components/ImageCarousel';
-// import ProgressBar from './components/ProgressBar';
 import flag from './photos/flag.jpeg';
 
 import Image from './components/Image';
@@ -24,7 +23,7 @@ import irpin2 from './photos/2022-03-16-17-06-20.jpg';
 import drawing1 from './photos/IMG_20220313_213752_359.jpg';
 import drawing2 from './photos/IMG_20220313_213757_134.jpg';
 import drawing3 from './photos/IMG_20220313_213801_768.jpg';
-import { createContext, useRef, useState } from 'react';
+import { createContext, Fragment, useRef, useState } from 'react';
 
 export const LANGUAGES = {
   EN: 'En',
@@ -193,7 +192,18 @@ function App() {
               <a href="mailto:zheleznyakov.dmitry@gmail.com">
                 zheleznyakov.dmitry@gmail.com
               </a>
-              </em>
+            </em>
+            <MultiLanguageComponent 
+              en=""
+              ru={
+                <Fragment>
+                  <br />
+                  <span>
+                    Украинская банковская карточка (внутри страны): 
+                    <em>5375235109555</em>
+                  </span>
+                </Fragment>}
+            />
           </b></p>
 
           <p style={{fontSize: '24px', fontWeight: 'bold', color: '#f1651d'}}>
