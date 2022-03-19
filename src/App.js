@@ -185,8 +185,8 @@ function App() {
 
           <p style={{fontSize: '24px', color: 'rgb(26, 115, 232)'}}><b>
             <MultiLanguageComponent
-              en="If you would like to help, the PayPal account is: "
-              ru="Если вы хотите помочь, наш PayPal: "
+              en="If you would like to help, the PayPal and Wise accounts are: "
+              ru="Если вы хотите помочь, наш PayPal и Wise: "
             />
             <em>
               <a href="mailto:zheleznyakov.dmitry@gmail.com">
