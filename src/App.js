@@ -65,14 +65,14 @@ function App() {
       <div className="Body">
         <div ref={topRef} />
         <ImageCarousel style={{ marginTop: '60px'}}>
-          <Image src={irpin} size={smallCarouselSize} />
-          <Image src={irpin2} size={smallCarouselSize} />
-          <Image src={children} size={smallCarouselSize} />
-          <Image src={drawing1} size={smallCarouselSize} />
-          <Image src={emma} size={smallCarouselSize} />
-          <Image src={drawing2} size={smallCarouselSize} />
-          <Image src={handToHand} size={smallCarouselSize} />
-          <Image src={drawing3} size={smallCarouselSize} />
+          <Image src={irpin} size={smallCarouselSize} clickable={false} />
+          <Image src={irpin2} size={smallCarouselSize} clickable={false} />
+          <Image src={children} size={smallCarouselSize} clickable={false} />
+          <Image src={drawing1} size={smallCarouselSize} clickable={false} />
+          <Image src={emma} size={smallCarouselSize} clickable={false} />
+          <Image src={drawing2} size={smallCarouselSize} clickable={false} />
+          <Image src={handToHand} size={smallCarouselSize} clickable={false} />
+          <Image src={drawing3} size={smallCarouselSize} clickable={false} />
         </ImageCarousel>
 
         <h1 className="H1">
@@ -220,7 +220,7 @@ function App() {
 
 
         <div className="TextWrapper">
-          <p>
+          {/*<p>
             <MultiLanguageComponent 
               en="The current target is "
               ru="Наша текущая цель "
@@ -232,8 +232,15 @@ function App() {
             />
             <b>£{current.toFixed(2)}</b>.</p>
 
-            <ProgressBar current={current} goal={goal} />
+              <ProgressBar current={current} goal={goal} />*/}
 
+          28.03.2022
+          <p>
+            <MultiLanguageComponent
+              en="We are raising money to help with getting potties for the five groups of children and also baby cot beds for the fifth group of children that was evacuated from Irpen and Donetsk region two weeks ago."
+              ru="Мы собираем деньги на приобретение горшков для пяти групп детей, а также детских кроваток для пятой группы детей, эвакуированных две недели назад из Ирпеня и Донецкой области."
+            />
+          </p>
 
           <p ref={doneRef}>
             <MultiLanguageComponent
@@ -241,86 +248,129 @@ function App() {
               ru="С помощью денег, которые мы собрали раньше, мы помогли:"
             />
           </p>
-          <ul className="Results">
-            <li>
-              <MultiLanguageComponent
-                en='bought vital medicine for 2 groups of children: on the way from Germany, but delayed at the customs'
-                ru="купили жизненно-необходимые лекарства для 2 групп детей: в пути из Германии, но задержались на таможне"
-              />
-            </li>
-            <li>
-              <MultiLanguageComponent
-                en="paid for the customs fee in order to get the medication delivered"
-                ru="оплатили таможенный сбор для доставки лекарств"
-              />
-            </li>
-            <li>
-              <MultiLanguageComponent
-                en="ordered another batch of medication needed for the other 2 groups  of children and paid the customs fee"
-                ru="заказали еще одну партию лекарств, необходимых для других 2 групп детей и оплатили таможенный сбор"
-              />
-            </li>
-            <li>
-              <MultiLanguageComponent
-                en="bought 2 second-hand baby cots (see the photo). Now, little children can sleep safely and comfortably, as they slept on the foldable camping beds."
-                ru="купили 2 б/у детские кроватки (см. фото). Теперь маленькие детки могут спать безопасно и комфортно, так как раньше они спали на раскладушках"
-              />
-            </li>
-            <li>
-              <MultiLanguageComponent
-                en="bought 2 second-hand prams: one for each group (see the photo)"
-                ru="купили 2 б/у коляски: по одной на каждую группу (см. фото)"
-              />
-            </li>
-            <li>
-              <MultiLanguageComponent
-                en="covered food expenses for the 5 volunteers for a month, so that they can continue taking care of the children without worrying about what they will eat"
-                ru="покрыли расходы на питание для 5 волонтеров на месяц, чтобы они могли продолжать заботиться о детях, не беспокоясь о том, что они будут есть"
-              />
-            </li>
-            <li>
-              <MultiLanguageComponent
-                en="bought 5 warm jackets and 5 pairs of boots. Two girls had their jackets torn, but now they are dressed warmly. The weather there is -7C"
-                ru="купили 5 теплых курток и 5 пар сапог. У двух девочек порвались курточки, а теперь они одеты тепло. Погода там -7С"
-              />
-            </li>
-            <li>
-              <MultiLanguageComponent
-                en='bought pacifiers, muslin cloths, baby dry formula milk for one group and children shampoos, baby nappy creams for the second group'
-                ru="купили пустышки, пеленки, детское молоко для одной группы и детские шампуни, детские присыпки для второй группы "
-              />
-            </li>
-            <li>
-              <MultiLanguageComponent
-                en='bought antibiotics. Little boy Misha caught bronchitis and is now at the hospital'
-                ru="купили антибиотики. Маленький мальчик Миша заболел бронхитом и сейчас находится в больнице"
-              />
-            </li>
-            <li>
-              <MultiLanguageComponent
-                en="bought water and food for 4 groups for one week"
-                ru="купили воды и еды на 4 группы на одну неделю"
-              />
-            </li>
-            <li>
-              <MultiLanguageComponent
-                en="bought some fresh groceries (milk, bread, fruit) for one week"
-                ru="купили свежих продуктов (молоко, хлеб, фрукты) на одну неделю"
-              />
-            </li>
-            <li>
-              <MultiLanguageComponent
-                en="bought some tea and coffee for the volunteers"
-                ru="купили чай и кофе для волонтеров"
-              />
-            </li>
-            <li>
-              <MultiLanguageComponent
-                en='and with what was left helped out a little bit the fifth group of children that has recently arrived from Irpin and Donetsk region'
-                ru="а на остатки немного помогли пятой группе детей, недавно приехавшей из Ирпени и Донецкой области"
-              />
-            </li>
-          </ul>
+          <div className="Results">
+            21.02.2022
+            <ul>
+              <li>
+                <MultiLanguageComponent
+                  en="bought prentatal vitamins for the two pregnant ladies"
+                  ru="купили витамины для двух беременных женщин"
+                />
+              </li>
+              <li>
+                <MultiLanguageComponent 
+                  en="bought vitamin D for babies and children"
+                  ru="купили витами D для детей"
+                />
+              </li>
+              <li>
+                <MultiLanguageComponent
+                  en="organised a surprise treat for all the children in five groups: balloons, fruit, sweets, biscuits, cakes"
+                  ru="организовали сюрприз для всех детей во всех пяти группах: воздушные шары, фрукты, сладости, печенье, торты"
+                />
+              </li>
+              <li>
+                <MultiLanguageComponent
+                  en={"bought a bicycle for the little girl Anya for her birthday." +
+                    " She witnessed her family being killed by the occupants in Irpen." +
+                    " She was the only one who survived and she was very traumatised." +
+                    " Her only wish was for her mom, dad and little brother to come home." +
+                    " She also told us that her parents promised her a bicycle for her birthday"}
+                  ru={"купили велосипед маленькой девочке Ане на день рождения." +
+                    " Она была свидетельницей убийства её семьи оккупантами в Ирпене." +
+                    " Она была единственной, кто выжил, и она была очень травмирована." +
+                    " Её единственным желанием было, чтобы её мама, папа и младший брат вернулись домой." +
+                    " Она также рассказала нам, что родители обещали ей велосипед на день рождения."}
+                />
+              </li>
+            </ul>
+
+            14.03.2022
+            <ul>
+              <li>
+                  <MultiLanguageComponent
+                    en="paid for the customs fee in order to get the medication delivered"
+                    ru="оплатили таможенный сбор для доставки лекарств"
+                  />
+                </li>
+                <li>
+                  <MultiLanguageComponent
+                    en="ordered another batch of medication needed for the other 2 groups  of children and paid the customs fee"
+                    ru="заказали еще одну партию лекарств, необходимых для других 2 групп детей и оплатили таможенный сбор"
+                  />
+                </li>
+                <li>
+                  <MultiLanguageComponent
+                    en="bought 5 warm jackets and 5 pairs of boots. Two girls had their jackets torn, but now they are dressed warmly. The weather there is -7C"
+                    ru="купили 5 теплых курток и 5 пар сапог. У двух девочек порвались курточки, а теперь они одеты тепло. Погода там -7С"
+                  />
+                </li>
+                <li>
+                <MultiLanguageComponent
+                  en='bought pacifiers, muslin cloths, baby dry formula milk for one group and children shampoos, baby nappy creams for the second group'
+                  ru="купили пустышки, пеленки, детское молоко для одной группы и детские шампуни, детские присыпки для второй группы "
+                />
+              </li>
+              <li>
+                <MultiLanguageComponent
+                  en='bought antibiotics. Little boy Misha caught bronchitis and is now at the hospital'
+                  ru="купили антибиотики. Маленький мальчик Миша заболел бронхитом и сейчас находится в больнице"
+                />
+              </li>
+              <li>
+                <MultiLanguageComponent
+                  en="bought water and food for 4 groups for one week"
+                  ru="купили воды и еды на 4 группы на одну неделю"
+                />
+              </li>
+              <li>
+                <MultiLanguageComponent
+                  en="bought some tea and coffee for the volunteers"
+                  ru="купили чай и кофе для волонтеров"
+                />
+              </li>
+              <li>
+                <MultiLanguageComponent
+                  en='and with what was left helped out a little bit the fifth group of children that has recently arrived from Irpin and Donetsk region'
+                  ru="а на остатки немного помогли пятой группе детей, недавно приехавшей из Ирпени и Донецкой области"
+                />
+              </li>
+            </ul>
+
+            07.03.2022
+            <ul>
+              <li>
+                <MultiLanguageComponent
+                  en='bought vital medicine for 2 groups of children: on the way from Germany, but delayed at the customs'
+                  ru="купили жизненно-необходимые лекарства для 2 групп детей: в пути из Германии, но задержались на таможне"
+                />
+              </li>
+              <li>
+                <MultiLanguageComponent
+                  en="bought 2 second-hand baby cots (see the photo). Now, little children can sleep safely and comfortably, as they slept on the foldable camping beds."
+                  ru="купили 2 б/у детские кроватки (см. фото). Теперь маленькие детки могут спать безопасно и комфортно, так как раньше они спали на раскладушках"
+                />
+              </li>
+              <li>
+                <MultiLanguageComponent
+                  en="bought 2 second-hand prams: one for each group (see the photo)"
+                  ru="купили 2 б/у коляски: по одной на каждую группу (см. фото)"
+                />
+              </li>
+              <li>
+                <MultiLanguageComponent
+                  en="covered food expenses for the 5 volunteers for a month, so that they can continue taking care of the children without worrying about what they will eat"
+                  ru="покрыли расходы на питание для 5 волонтеров на месяц, чтобы они могли продолжать заботиться о детях, не беспокоясь о том, что они будут есть"
+                />
+              </li>
+              <li>
+                <MultiLanguageComponent
+                  en="bought some fresh groceries (milk, bread, fruit) for one week"
+                  ru="купили свежих продуктов (молоко, хлеб, фрукты) на одну неделю"
+                />
+              </li>
+            </ul>
+          </div>
         </div>
 
         <ImageCarousel>
@@ -347,6 +397,41 @@ function App() {
           <MultiLanguageComponent
             en={<span><em>"You are all so strong and brave."</em> Constance and Chris, Seattle, USA</span>}
             ru={<span><em>"Вы все сильные и храбрые."</em> Констанс и Крис, Сиэтл, США</span>}
+          />
+        </article>
+
+        <article className="KindnessCard">
+          <MultiLanguageComponent
+          en={<span>
+              <em>"Our thoughts are with you all.
+              You and the children are not forgotten and we will continue 
+              to think of you and support you as best as we can."</em>
+              {' '}The Heaton family, England, UK
+            </span>}
+          ru={<span>
+            <em>"Наши мысли со всеми вами.
+            Вы и дети не забыты, и мы будем продолжать думать о вас
+            и поддерживать вас, насколько это возможно."</em>
+            {' '}Семья Хитон, Англия, Великобритания
+          </span>}
+          />
+        </article>
+
+        <article className="KindnessCard">
+          <MultiLanguageComponent
+            en={<span>
+              <em>"You are going through a hard time right now.
+                Please know that people all over the world are thinking of you.
+                You are in our thoughts, and we are all sending support and love your way.
+                Know that you are loved by us. 
+                You are strong and you will get through this!"</em>
+              {' '}Love and hugs from Britta from Zurich, Switzerland</span>}
+            ru={<span>
+              <em>"Вы сейчас переживаете тяжелые времена. 
+                Пожалуйста, знайте, что люди во всем мире думают о вас. 
+                Вы в наших мыслях, и мы все посылаем вам поддержку и любовь. 
+                Знайте, что ты любим нами. Вы сильные и вы справитесь!"</em>
+                {' '}С любовью и объятиями, Бритта из Цюриха, Швейцария</span>}
           />
         </article>
       </div>
