@@ -50,7 +50,7 @@ function App() {
   const app = (
     <div className="App">
       <div className="ToolBar">
-        <LanguageChooser lang={lang} setLang={setLang} />
+        {/* <LanguageChooser lang={lang} setLang={setLang} /> */}
         <a onClick={scrollTo(ourGoalRef)}>
           <MultiLanguageComponent en="Our goal" ru="Наша цель" />
         </a>
@@ -64,7 +64,7 @@ function App() {
       </div>
       <div className="Body">
         <div ref={topRef} />
-        <ImageCarousel style={{ marginTop: '60px'}}>
+        {/*<ImageCarousel style={{ marginTop: '60px'}}>
           <Image src={irpin} size={smallCarouselSize} clickable={false} />
           <Image src={irpin2} size={smallCarouselSize} clickable={false} />
           <Image src={children} size={smallCarouselSize} clickable={false} />
@@ -73,7 +73,7 @@ function App() {
           <Image src={drawing2} size={smallCarouselSize} clickable={false} />
           <Image src={handToHand} size={smallCarouselSize} clickable={false} />
           <Image src={drawing3} size={smallCarouselSize} clickable={false} />
-        </ImageCarousel>
+  </ImageCarousel>*/}
 
         <h1 className="H1">
           <span style={{
@@ -134,45 +134,23 @@ function App() {
                 "These volunteers are ordinary people who dedicate their time, efforts and risk their lives" +
                 " in order to provide care and support to the children." +
                 " They are there seven days a week." +
-                " They are not receiving any income or financial support either from the government," +
-                " bigger charitable organisations, or local authorities." +
-                " The humanitarian help they receive is not enough." +
-                " They are struggling and quite often have to bring food from home or eat what is left from feeding the children." +
+                " They are not receiving any income or financial support." +
                 " Local people have no money to help them either."
               }
               ru={
                 "Эти волонтеры — обычные люди, которые посвящают свое время, усилия и рискуют своей жизнью," +
                 " чтобы заботиться и морально поддерживать всех деток. Они проводят время с детьми все семь дней в неделю." +
-                " Они не получают никаких доходов или финансовой поддержки ни от правительства и" +
-                " крупных благотворительных организаций, ни от местных властей. Гуманитарной помощи, которую они получают," +
-                " недостаточно. Они справляются как могут и довольно часто вынуждены приносить еду из дома или" +
-                " доедать то, что осталось от кормления детей. У местных жителей тоже нет денег, чтобы им помочь."
+                " Они не получают никаких доходов или финансовой поддержки." +
+                " У местных жителей тоже нет денег, чтобы им помочь."
               }
             />
           </p>
-
-          <p>
-            <MultiLanguageComponent
-              en={
-                "At the moment they need help with buying food, water, and the essentials (baby nappies, formula milk, toiletries, etc.)" +
-                " for every week. They also need help with getting vital medication for the new group of 40 children" +
-                " recently evacuated from Irpin and the Donetsk region."
-              }
-              ru={
-                "В настоящее время им нужна помощь с заккупкой еды, воды и предметов первой необходимости" +
-                " (детские подгузники, молочная смесь, туалетно-косметические принадлежности и т. д.) на каждую неделю." +
-                " Им также нужна помощь в получении жизненно-необходимых лекарств для новой группы из 40 детей," +
-                " недавно эвакуированной из Ирпени и Донецкой области."
-              }
-            />
-          </p>
-
 
 
           <p ref={ourGoalRef} style={{fontSize: '30px', fontWeight: 'bold', color: 'darkgreen'}}>
             <MultiLanguageComponent
               en={
-                "We are raising money to respond to their urgent needs and help maintain their stock of food, water and essentials" +
+                "We have been raising money to respond to their urgent needs and help maintain their stock of food, water and essentials" +
                 " (nappies, formula milk, etc.)."
               }
               ru={
@@ -183,7 +161,18 @@ function App() {
           </p>
 
 
-          <p style={{fontSize: '24px', color: 'rgb(26, 115, 232)'}}><b>
+          Latest update (28.03.2022):
+          <br />
+          <MultiLanguageComponent 
+            en={"Luckily, the volunteers managed to get in touch with several local humanitarian aid and charitable organisations" +
+            " who started helping them." +
+            " It took some time, but this is a great news and we are happy for them." +
+            " On behalf of all the volunteers, we warmly thank everyone who has helped us support them and the children" +
+            " and ensure they had necessary essentials throughout this time." +
+            " We've become so close with these volunteers and will continue keeping in touch with them." +
+            " Thank you so much for your kindness and all the help."}
+          />
+          {/*<p style={{fontSize: '24px', color: 'rgb(26, 115, 232)'}}><b>
             <MultiLanguageComponent
               en="If you would like to help, the PayPal and Wise accounts are: "
               ru="Если вы хотите помочь, наш PayPal и Wise: "
@@ -203,12 +192,12 @@ function App() {
                     <em>5375235109555</em>
                   </span>
                 </Fragment>}
-            />
-          </b></p>
+              />
+          </b></p>*/}
 
           <p style={{fontSize: '24px', fontWeight: 'bold', color: '#f1651d'}}>
             <MultiLanguageComponent
-              en={"Please also visit our Etsy shop where we offer a few beautiful prints to buy to support the orphan children: "}
+              en={"Please visit our Etsy shop where we offer a few beautiful prints to buy to support other charitable organisations who help children and their families in Ukraine: "}
               ru={"Пожалуйста, также посетите наш магазин Etsy, где мы предлагаем несколько красивых принтов, чтобы поддержать детей-сирот: "}
             />
             <em>
@@ -234,13 +223,13 @@ function App() {
 
               <ProgressBar current={current} goal={goal} />*/}
 
-          28.03.2022
+          {/*28.03.2022
           <p>
             <MultiLanguageComponent
               en="We are raising money to help with getting potties for the five groups of children and also baby cot beds for the fifth group of children that was evacuated from Irpen and Donetsk region two weeks ago."
               ru="Мы собираем деньги на приобретение горшков для пяти групп детей, а также детских кроваток для пятой группы детей, эвакуированных две недели назад из Ирпеня и Донецкой области."
             />
-          </p>
+            </p>*/}
 
           <p ref={doneRef}>
             <MultiLanguageComponent
@@ -373,7 +362,7 @@ function App() {
           </div>
         </div>
 
-        <ImageCarousel>
+        {/*<ImageCarousel>
           <Image src={crib} />
           <Image src={newPrams} />
           <Image src={water} />
@@ -381,7 +370,7 @@ function App() {
           <Image src={imgFood} />
           <Video src={videoFood} itemType="video/mp4" />
           <Image src={pram} />
-        </ImageCarousel>
+            </ImageCarousel>*/}
 
 
 

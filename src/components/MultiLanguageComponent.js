@@ -6,7 +6,8 @@ const MultiLanguageComponent = ({ en, ru }) => {
     const lang = useContext(LanguageContext);
     switch (lang) {
         case LANGUAGES.EN: return en;
-        case LANGUAGES.RU: return ru;
+        case LANGUAGES.RU: return en;
+        // case LANGUAGES.RU: return ru;
         default: return <div />;
     }
 };
