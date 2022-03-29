@@ -96,11 +96,11 @@ function App() {
                 "Since the military invasion in Ukraine started orphan care homes have been under attack." +
                 " Many of these buildings were destroyed and quite a few children died." +
                 " Rescue teams urgently and successfully evacuated the children." +
-                " This rescue operation is ongoing, and so far the group that I am helping" +
-                " took on over 170 orphan children from" +
+                " This rescue operation is ongoing, and so far the group" +
+                " has accomodated over 170 orphan children (devided into five groups and placed at different locations) from" +
                 " Kharkiv, Kherson, Irpin and Donetsk region." +
                 " Over 50 of them are babies." +
-                " Many of these children became orphans during this war." +
+                " Many of these children became orphans during this invasion." +
                 " They are scared and traumatised."
               }
               ru={
@@ -128,7 +128,7 @@ function App() {
             />
           </p>
 
-          <p>
+          {/*<p>
             <MultiLanguageComponent 
               en={
                 "These volunteers are ordinary people who dedicate their time, efforts and risk their lives" +
@@ -144,7 +144,7 @@ function App() {
                 " У местных жителей тоже нет денег, чтобы им помочь."
               }
             />
-          </p>
+            </p>*/}
 
 
           <p ref={ourGoalRef} style={{fontSize: '30px', fontWeight: 'bold', color: 'darkgreen'}}>
@@ -302,8 +302,8 @@ function App() {
               </li>
               <li>
                 <MultiLanguageComponent
-                  en='bought antibiotics. Little boy Misha caught bronchitis and is now at the hospital'
-                  ru="купили антибиотики. Маленький мальчик Миша заболел бронхитом и сейчас находится в больнице"
+                  en='bought antibiotics. Little boy Maxim caught bronchitis and was at the hospital. He is much better now'
+                  ru="купили антибиотики. Маленький мальчик Максим заболел бронхитом и сейчас находится в больнице"
                 />
               </li>
               <li>
@@ -330,19 +330,19 @@ function App() {
             <ul>
               <li>
                 <MultiLanguageComponent
-                  en='bought vital medicine for 2 groups of children: on the way from Germany, but delayed at the customs'
+                  en='bought necessaly medication for 2 groups of children: arrived on 25.03.2022'
                   ru="купили жизненно-необходимые лекарства для 2 групп детей: в пути из Германии, но задержались на таможне"
                 />
               </li>
               <li>
                 <MultiLanguageComponent
-                  en="bought 2 second-hand baby cots (see the photo). Now, little children can sleep safely and comfortably, as they slept on the foldable camping beds."
+                  en="bought 2 second-hand baby cots. Now, little children can sleep safely and comfortably, as they slept on the foldable camping beds."
                   ru="купили 2 б/у детские кроватки (см. фото). Теперь маленькие детки могут спать безопасно и комфортно, так как раньше они спали на раскладушках"
                 />
               </li>
               <li>
                 <MultiLanguageComponent
-                  en="bought 2 second-hand prams: one for each group (see the photo)"
+                  en="bought 2 second-hand prams: one for each group"
                   ru="купили 2 б/у коляски: по одной на каждую группу (см. фото)"
                 />
               </li>
